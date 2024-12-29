@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <title>LOGIN</title>
+
+    <link rel="icon" type="image/png" href="plate.png"/>
+    
+</head>
+    <header>
+        <h1>YOURPLATE PARTNER </h1>
+    </header>
+
+
+<body>
+    <div class="CREATE_ACCOUNT">  
+        <br>
+        <h2 align="center">LOGIN</h2>
+        <br><br>
+
+        <form action="/" method="post">
+            <!-- form fields -->
+            <label>EMAIL </label>
+            <input type="email" name="email" id="email" placeholder=" name@email.com">
+        <br><br>
+        
+        <label>PASSWORD </label>
+            <input type="password" name="password" id="password" placeholder="Enter Password ">
+        <br><br>
+
+            <button type="submit">Login </button>
+        </form>
+        
+        <hr>
+    
+        <br>
+        
+        <h3>Don't have an account?
+                <!--<a href="templates/register.html">Register</a>-->
+                <a href="{{ url_for('register') }}">Register</a>
+
+        </h3> 
+        <br> <br>
+        
+    </div>
+</body>
+
+<footer >
+    <div class="labels_footer">
+        <a href="https://www.facebook.com/groups/227049364011004/" target="_blank"><i class="fab fa-facebook" style="color:#1877F2"></i> </a>
+        
+        <a href="https://www.instagram.com/recipebookapp/" target="_blank"><i class="fab fa-instagram" style="color:#C40957"></i></a>
+        
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" style="color:#2AA4D9"></i></a>
+        
+        <a href="https://www.youtube.com/results?search_query=recipe+sharing+app+channel" target="_blank"><i class="fab fa-youtube" style="color:red"></i></a>
+    </div>
+    <br>
+</footer>
+
+</html>

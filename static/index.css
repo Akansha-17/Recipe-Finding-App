@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    display: flex;
+    width:100%;
+}
+
+header h1
+{
+    font-family: cursive;
+    font-size: 40px;
+    width: 67%;
+    color: rgb(213, 18, 18);
+    margin-left: 4%;
+}
+
+
+header nav{
+    width:30%;
+    display: block;
+    text-align:center;
+    padding-top: 3%;
+    background-color: rgba(216, 128, 84, 0.733);
+    border-bottom-left-radius: 50px;
+}
+
+header nav a{  
+    padding:10% 5%;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+header nav a:hover {
+    background-color:darkgrey;
+}
+
+
+    body {
+        text-align: center;
+        margin: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(144, 221, 226);
+    }
+    h1 {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    form {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+        width: 200px;
+    }
+    .recipe-title {
+        font-size: 16px;
+        line-height: 1.2;
+        max-height: 3.6em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+    }
+    a {
+        display: inline-block;
+        margin-top: 10px;
+        color: blue;
+        text-decoration: underline;
+    }
+    .home-button {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 10px;
+        color: blue;
+        text-decoration: underline;
+    }
+    .recipe-details {
+        max-width: 600px;
+        margin: 0 auto;
+        border: 2px solid #ccc;
+        padding: 20px;
+    }
+    .section-title {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .ingredient-list, .instrction-list {
+        text-align: left;
+    }

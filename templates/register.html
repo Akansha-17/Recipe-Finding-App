@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+    <!-- <link rel="stylesheet" href="register.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='plate.png') }}">
+    
+    <script src="https://kit.fontawesome.com/8e5737597c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+    <head>
+        <title>REGISTER</title>
+        <!-- <link rel="icon" type="image/png" href="plate.png"/> -->
+
+
+    </head>
+
+    <header>
+        <h1>YOURPLATE<br> PARTNER </h1>
+    </header>
+
+    <body>
+        <div class="CREATE_ACCOUNT">  
+            <br>
+            <h2 align="center">CREATE YOUR ACCOUNT</h2>
+            <br><br>
+
+            <form action="/register" method="post">
+                <!-- form fields -->
+                <label>USERNAME </label>
+                <input type="text" name="USERNAME" id="name" placeholder=" Kotlin Andrew">
+            <br><br>
+
+            <label>EMAIL </label>
+                <input type="email" name="email" id="email" placeholder=" name@email.com">
+            <br><br>
+ 
+                <label>AGE </label>
+                <input type="number" name="age" id="age" placeholder="Enter your Age ">
+            <br><br>
+            
+            <label>PASSWORD </label>
+                <input type="password" name="password" id="password" placeholder="Enter Password ">
+            <br><br>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+            
+            <hr>
+        
+            <br>
+            
+            <h3>Login?
+                    <a href="{{ url_for('login') }}">Login</a>
+
+            </h3> 
+            <br> <br>
+            
+        </div>
+        
+
+    </body>
+
+    <footer >
+        <div class="labels_footer">
+            <a href="https://www.facebook.com/groups/227049364011004/" target="_blank"><i class="fab fa-facebook" style="color:#1877F2"></i> </a>
+            
+            <a href="https://www.instagram.com/recipebookapp/" target="_blank"><i class="fab fa-instagram" style="color:#C40957"></i></a>
+            
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" style="color:#2AA4D9"></i></a>
+            
+            <a href="https://www.youtube.com/results?search_query=recipe+sharing+app+channel" target="_blank"><i class="fab fa-youtube" style="color:red"></i></a>
+        </div>
+        <br>
+    </footer>
+
+</html>

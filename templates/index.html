@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PLATEPAL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<header>
+    <h1>YOURPLATE <br> PARTNER </h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/index">Recipes</a>
+        <a href="contactus"> Contact US</a>
+        <!--<a href="profile/myprofile.html">Profile</a>-->
+    </nav>
+</header>
+
+<body>
+    <!--<h1>Recipe App</h1>-->
+    <div class="searchbar">
+        <form method="POST" action="/index">
+         <input type="text" name="search_query" placeholder="Search for recipes">
+         <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <!-- Check of recipes are available-->
+    {% if recipes%}
+    <h2>Results for "{{ search_query }}"</h2>
+    <ul>
+        {% for recipe in recipes %}
+        <li>
+            <h3 class="recipe-title">{{ recipe.title }}</h3>
+            {% if recipe.image %}
+            <img src="{{ recipe.image }}" alt="{{ recipe.title }}">
+            {% endif %}
+            <a href="{{ url_for('view_recipe', recipe_id=recipe.id, search_query=search_query) }}">View</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <!-- If no recipes are found -->
+    {% else %}
+    <p>No recipes found.</p>
+    {% endif %}
+</body>
+
+<footer >
+    <div class="labels_footer">
+        <a href="https://www.facebook.com/groups/227049364011004/" target="_blank"><i class="fab fa-facebook" style="color:#1877F2"></i> </a>
+        
+        <a href="https://www.instagram.com/recipebookapp/" target="_blank"><i class="fab fa-instagram" style="color:#C40957"></i></a>
+        
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" style="color:#2AA4D9"></i></a>
+        
+        <a href="https://www.youtube.com/results?search_query=recipe+sharing+app+channel target="_blank"><i class="fab fa-youtube" style="color:red"></i></a>
+    </div>
+    <br>
+</footer>
+</html>
