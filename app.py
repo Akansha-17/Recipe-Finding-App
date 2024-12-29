@@ -6,7 +6,7 @@ from urllib.parse import unquote
 app = Flask(__name__)
 
 # Replace with your Spoonacular API key
-API_KEY = '060d9bac3f8240ab88ec39ef5fd0ba96'
+API_KEY = 'your-api-key'
 
 # Define the route for the login page
 @app.route('/', methods=['GET', 'POST'])
