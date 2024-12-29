@@ -44,7 +44,7 @@ PlatePal is a web application designed to help users search for and explore reci
    ```bash
    flask run
    OR
-   flask app.py
+   python app.py
    ```
    The application will be available at `http://127.0.0.1:5000/`.
 
